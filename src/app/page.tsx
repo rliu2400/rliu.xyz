@@ -4,19 +4,19 @@ import About from "@/components/About";
 export default function Home() {
     return (
         <div
-            className="min-h-screen flex flex-col items-center bg-fixed bg-cover bg-center text-gray-800 dark:text-gray-100 font-fira-code"
+            className="min-h-screen flex flex-col items-center bg-fixed bg-cover bg-center text-gray-800 dark:text-gray-100 font-fira-code transition-colors duration-500 ease-in-out"
             style={{ backgroundImage: 'url("/images/hacker_cat_red.jpg")' }} // Apply background image
         >
             {/* Header */}
             <Header />
 
-            {/* About */}
+            {/* About Section */}
             <About />
 
             {/* Education Section */}
-            <section className="w-full py-12 px-6 bg-white">
+            <section className="w-full py-12 px-6 bg-white bg-opacity-90 dark:bg-gray-800 dark:bg-opacity-90 transition-colors duration-500 ease-in-out">
                 <h2 className="text-4xl font-semibold text-center mb-8">Education</h2>
-                <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 dark:text-gray-200">
+                <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 dark:text-gray-200 transition-colors duration-500">
                     <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md max-w-md flex-grow flex flex-col">
                         <h3 className="text-2xl font-bold">Northwestern University</h3>
                         <p className="text-lg text-gray-600 dark:text-gray-300">B.S. Computer Science & Mathematics</p>
@@ -30,12 +30,13 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
             {/* Resume Section */}
-            <section className="w-full py-12 bg-gray-50 px-6">
+            <section className="w-full py-12 bg-gray-50 bg-opacity-90 dark:bg-gray-700 dark:bg-opacity-90 px-6 transition-colors duration-500 ease-in-out">
                 <h2 className="text-4xl font-semibold text-center mb-8">Resume</h2>
                 <div className="flex flex-col items-center">
                     <a
-                        href="/resume.pdf" // Make sure to link to your actual resume file
+                        href="/resume.pdf"
                         className="bg-red-900 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-red-700 transition"
                         download
                     >
@@ -45,15 +46,13 @@ export default function Home() {
             </section>
 
             {/* Projects Section */}
-            <section className="w-full py-12 px-6 bg-white">
+            <section className="w-full py-12 px-6 bg-white bg-opacity-90 dark:bg-gray-800 dark:bg-opacity-90 transition-colors duration-500 ease-in-out">
                 <h2 className="text-4xl font-semibold text-center mb-8">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Project 1 */}
-                    <div className="bg-gray-200 p-6 rounded-lg shadow-md">
+                    <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-500 ease-in-out">
                         <h3 className="text-2xl font-bold">Project 1</h3>
-                        <p className="mt-2 text-gray-600">
-                            feeeeeet (placeholder)
-                        </p>
+                        <p className="mt-2 text-gray-600 dark:text-gray-300">Project description here</p>
                         <a
                             href="https://github.com/yourusername/project1"
                             target="_blank"
@@ -64,11 +63,9 @@ export default function Home() {
                         </a>
                     </div>
                     {/* Project 2 */}
-                    <div className="bg-gray-200 p-6 rounded-lg shadow-md">
+                    <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-500 ease-in-out">
                         <h3 className="text-2xl font-bold">Project 2</h3>
-                        <p className="mt-2 text-gray-600">
-                            feeeeeet (placeholder)
-                        </p>
+                        <p className="mt-2 text-gray-600 dark:text-gray-300">Project description here</p>
                         <a
                             href="https://github.com/yourusername/project2"
                             target="_blank"
@@ -79,11 +76,9 @@ export default function Home() {
                         </a>
                     </div>
                     {/* Project 3 */}
-                    <div className="bg-gray-200 p-6 rounded-lg shadow-md">
+                    <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-500 ease-in-out">
                         <h3 className="text-2xl font-bold">Project 3</h3>
-                        <p className="mt-2 text-gray-600">
-                            feeeeeet (placeholder)
-                        </p>
+                        <p className="mt-2 text-gray-600 dark:text-gray-300">Project description here</p>
                         <a
                             href="https://github.com/yourusername/project3"
                             target="_blank"
@@ -97,11 +92,10 @@ export default function Home() {
             </section>
 
             {/* Footer Section */}
-            <footer className="w-full bg-red-900 text-white py-8">
+            <footer className="w-full bg-red-900 text-white py-8 transition-colors duration-500 ease-in-out">
                 <div className="flex flex-col items-center">
                     <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
                     <div className="flex gap-6 mt-4">
-                        {/* Add social media icons or links */}
                         <a
                             href="https://linkedin.com/in/rliu2400"
                             target="_blank"
@@ -124,4 +118,3 @@ export default function Home() {
         </div>
     );
 }
-
