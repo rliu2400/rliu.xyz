@@ -12,13 +12,13 @@ export default function Home() {
                 <div className="flex flex-col md:flex-row justify-center items-stretch gap-8">
                     <div className="bg-gray-200 p-6 rounded-lg shadow-md max-w-md flex-grow flex flex-col">
                         <h3 className="text-2xl font-bold">Northwestern University</h3>
-                        <p className="text-lg text-gray-600">B.S. in Computer Science & Mathematics</p>
+                        <p className="text-lg text-gray-600">B.S. Computer Science & Mathematics</p>
                         <p className="text-lg text-gray-600">Minor in Philosophy</p>
                         <p className="text-md mt-auto">2023 - Present</p>
                     </div>
                     <div className="bg-gray-200 p-6 rounded-lg shadow-md max-w-md flex-grow flex flex-col">
                         <h3 className="text-2xl font-bold">Northwestern University</h3>
-                        <p className="text-lg text-gray-600">M.S. in Computer Science</p>
+                        <p className="text-lg text-gray-600">M.S. Computer Science</p>
                         <p className="text-md mt-auto">2023 - Present</p>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ export default function Home() {
                     <div className="flex gap-6 mt-4">
                         {/* Add social media icons or links */}
                         <a
-                            href="https://linkedin.com/in/yourusername"
+                            href="https://linkedin.com/in/rliu2400"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-white hover:text-gray-300"
@@ -104,7 +104,7 @@ export default function Home() {
                             LinkedIn
                         </a>
                         <a
-                            href="https://github.com/yourusername"
+                            href="https://github.com/rliu2400"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-white hover:text-gray-300"
