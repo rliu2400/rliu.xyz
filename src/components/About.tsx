@@ -8,7 +8,7 @@ export default function About() {
     return (
         <section
             ref = {sectionRef}
-            className="w-full min-h-screen flex items-center justify-center py-24"
+            className="w-full flex items-center justify-center py-24"
             style = {{ opacity }}
         >
             {/* Floating Div with Rounded Corners */}
