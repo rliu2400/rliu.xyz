@@ -1,19 +1,14 @@
 export default function About() {
     return (
-        <section
-            className="relative w-full min-h-screen bg-cover bg-center bg-fixed flex items-center justify-center"
-            style={{
-                backgroundImage: 'url("/images/background.jpg")', // Replace with your background image path
-            }}
-        >
-            {/* Solid Background for the About Me Section */}
+        <section className="w-full min-h-screen flex items-center justify-center py-24">
+            {/* Floating Div with Rounded Corners */}
             <div className="max-w-4xl bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
                 <div className="flex flex-col md:flex-row items-center gap-8">
                     
                     {/* Image Section */}
                     <div className="w-full md:w-1/3">
                         <img
-                            src="/images/profile.jpg"
+                            src="/images/profile.jpg" // Replace with your profile image path
                             alt="Profile Image"
                             className="w-full h-auto rounded-lg shadow-lg"
                         />

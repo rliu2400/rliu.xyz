@@ -3,7 +3,10 @@ import About from "@/components/About";
 
 export default function Home() {
     return (
-        <div className="min-h-screen flex flex-col items-center bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100 font-fira-code">
+        <div
+            className="min-h-screen flex flex-col items-center bg-fixed bg-cover bg-center text-gray-800 dark:text-gray-100 font-fira-code"
+            style={{ backgroundImage: 'url("/images/hacker_cat_red.jpg")' }} // Apply background image
+        >
             {/* Header */}
             <Header />
 
