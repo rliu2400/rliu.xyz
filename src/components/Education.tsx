@@ -17,10 +17,9 @@ export default function Education() {
         const visibleHeight = visibleTop - visibleBottom;
 
         // Ensure that opacity increases as more of the section becomes visible
-        let opacityValue = 0.3 + (0.7 * visibleHeight) / rect.height;
+        let opacityValue = .2 + visibleHeight / rect.height;
 
-        // Cap the opacity at 1 after 70% of the section is visible
-        if (opacityValue > 0.7) {
+        if (opacityValue > 1) {
             opacityValue = 1;
         }
 
