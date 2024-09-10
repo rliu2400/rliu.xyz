@@ -40,9 +40,50 @@ body {
   }
 }
 
+@keyframes fadeOutMoveDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @layer utilities {
   .fade-in-move-up {
     animation: fadeInMoveUp .5s ease-out forwards;
+  }
+
+  .fade-out-move-down {
+    animation: fadeOutMoveDown 0.5s ease-out forwards;
+  }
+
+  .fade-in {
+    animation: fadeIn .5s ease-out forwards;
+  }
+
+  .fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
   }
 }
 
