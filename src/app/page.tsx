@@ -2,23 +2,23 @@ import Header from "@/components/Header";
 
 export default function Home() {
     return (
-        <div className="min-h-screen flex flex-col items-center bg-gray-100 text-gray-800 font-fira-code">
+        <div className="min-h-screen flex flex-col items-center bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100 font-fira-code">
             {/* Introduction Section */}
             <Header />
 
             {/* Education Section */}
             <section className="w-full py-12 px-6 bg-white">
                 <h2 className="text-4xl font-semibold text-center mb-8">Education</h2>
-                <div className="flex flex-col md:flex-row justify-center items-stretch gap-8">
-                    <div className="bg-gray-200 p-6 rounded-lg shadow-md max-w-md flex-grow flex flex-col">
+                <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 dark:text-gray-200">
+                    <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md max-w-md flex-grow flex flex-col">
                         <h3 className="text-2xl font-bold">Northwestern University</h3>
-                        <p className="text-lg text-gray-600">B.S. Computer Science & Mathematics</p>
-                        <p className="text-lg text-gray-600">Minor in Philosophy</p>
+                        <p className="text-lg text-gray-600 dark:text-gray-300">B.S. Computer Science & Mathematics</p>
+                        <p className="text-lg text-gray-600 dark:text-gray-300">Minor in Philosophy</p>
                         <p className="text-md mt-auto">2023 - Present</p>
                     </div>
-                    <div className="bg-gray-200 p-6 rounded-lg shadow-md max-w-md flex-grow flex flex-col">
+                    <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md max-w-md flex-grow flex flex-col">
                         <h3 className="text-2xl font-bold">Northwestern University</h3>
-                        <p className="text-lg text-gray-600">M.S. Computer Science</p>
+                        <p className="text-lg text-gray-600 dark:text-gray-300">M.S. Computer Science</p>
                         <p className="text-md mt-auto">2023 - Present</p>
                     </div>
                 </div>
