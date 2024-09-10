@@ -28,6 +28,7 @@ body {
   background-color: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+  overscroll-behavior: none;
   
   /* Hide scrollbar for Chrome, Safari, Opera, and Edge */
   -ms-overflow-style: none; /* IE and Edge */
