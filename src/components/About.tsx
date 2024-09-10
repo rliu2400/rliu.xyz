@@ -6,7 +6,7 @@ export default function About() {
                 {/* Image Section */}
                 <div className="w-full md:w-1/3">
                     <img
-                        src="/path-to-your-image.jpg" // Replace with your image path
+                        src="/path-to-your-image.jpg"
                         alt="Profile Image"
                         className="w-full h-auto rounded-lg shadow-lg"
                     />
@@ -16,13 +16,13 @@ export default function About() {
                 <div className="w-full md:w-2/3">
                     <h2 className="text-4xl font-bold mb-4">About Me</h2>
                     <p className="text-lg mb-4">
-                        Hi, I'm Ryan Liu, a Computer Science and Mathematics student at Northwestern University with a passion for building impactful software solutions.
+                        Hi, I'm Ryan Liu, a Computer Science and Mathematics student at Northwestern University with a passion for building impactful software solutions. This is very original.
                     </p>
                     <p className="text-lg mb-4">
-                        I specialize in developing efficient algorithms, working on full-stack applications, and exploring cutting-edge technologies. (generic intro) In my free time, I enjoy engaging in competitive programming.
+                        I specialize in developing efficient algorithms, working on full-stack applications, and exploring cutting-edge technologies. This is an incredibly generic introduction. In my free time, I enjoy competitive programming, badminton, weightlifting, doxxing, trolling, and risk-taking.
                     </p>
                     <p className="text-lg">
-                        Whether it's creating a simple website or designing complex systems, I’m always driven to push boundaries and build things that make a difference.
+                        Whether it's creating a simple website or designing complex systems or interacting with people, I’m always driven to push boundaries (haha) (hahahaha) and build things that make a difference.
                     </p>
                 </div>
             </div>

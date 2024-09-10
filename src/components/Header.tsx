@@ -19,7 +19,7 @@ export default function Header() {
     };
 
     return (
-        <header className="w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white flex justify-between items-center px-6 py-4 shadow-md">
+        <header className="w-full bg-red-900 text-white flex justify-between items-center px-6 py-4 shadow-md">
             {/* Left: Dropdown Menu */}
             <div className="relative">
                 <button
