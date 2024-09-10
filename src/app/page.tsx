@@ -1,10 +1,13 @@
 import Header from "@/components/Header";
 import About from "@/components/About";
+import Education from "@/components/Education";
+import Resume from "@/components/Resume";
+import Projects from "@/components/Projects";
 
 export default function Home() {
     return (
         <div
-            className="min-h-screen flex flex-col items-center bg-fixed bg-cover bg-center text-gray-800 dark:text-gray-100 font-fira-code transition-colors duration-500 ease-in-out"
+            className="min-h-screen flex flex-col items-center bg-fixed bg-cover bg-center text-gray-800 dark:text-gray-100 font-fira-code"
             style={{ backgroundImage: 'url("/images/hacker_cat_red.jpg")' }} // Apply background image
         >
             {/* Header */}
@@ -14,82 +17,13 @@ export default function Home() {
             <About />
 
             {/* Education Section */}
-            <section className="w-full py-12 px-6 bg-white bg-opacity-90 dark:bg-gray-800 dark:bg-opacity-90 transition-colors duration-500 ease-in-out">
-                <h2 className="text-4xl font-semibold text-center mb-8">Education</h2>
-                <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 dark:text-gray-200 transition-colors duration-500">
-                    <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md max-w-md flex-grow flex flex-col">
-                        <h3 className="text-2xl font-bold">Northwestern University</h3>
-                        <p className="text-lg text-gray-600 dark:text-gray-300">B.S. Computer Science & Mathematics</p>
-                        <p className="text-lg text-gray-600 dark:text-gray-300">Minor in Philosophy</p>
-                        <p className="text-md mt-auto">2023 - Present</p>
-                    </div>
-                    <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md max-w-md flex-grow flex flex-col">
-                        <h3 className="text-2xl font-bold">Northwestern University</h3>
-                        <p className="text-lg text-gray-600 dark:text-gray-300">M.S. Computer Science</p>
-                        <p className="text-md mt-auto">2023 - Present</p>
-                    </div>
-                </div>
-            </section>
+            <Education />
 
             {/* Resume Section */}
-            <section className="w-full py-12 bg-gray-50 bg-opacity-90 dark:bg-gray-700 dark:bg-opacity-90 px-6 transition-colors duration-500 ease-in-out">
-                <h2 className="text-4xl font-semibold text-center mb-8">Resume</h2>
-                <div className="flex flex-col items-center">
-                    <a
-                        href="/resume.pdf"
-                        className="bg-red-900 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-red-700 transition"
-                        download
-                    >
-                        Download My Resume
-                    </a>
-                </div>
-            </section>
+            <Resume />
 
             {/* Projects Section */}
-            <section className="w-full py-12 px-6 bg-white bg-opacity-90 dark:bg-gray-800 dark:bg-opacity-90 transition-colors duration-500 ease-in-out">
-                <h2 className="text-4xl font-semibold text-center mb-8">Projects</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {/* Project 1 */}
-                    <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-500 ease-in-out">
-                        <h3 className="text-2xl font-bold">Project 1</h3>
-                        <p className="mt-2 text-gray-600 dark:text-gray-300">Project description here</p>
-                        <a
-                            href="https://github.com/yourusername/project1"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-red-600 hover:underline mt-4 inline-block"
-                        >
-                            View on GitHub
-                        </a>
-                    </div>
-                    {/* Project 2 */}
-                    <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-500 ease-in-out">
-                        <h3 className="text-2xl font-bold">Project 2</h3>
-                        <p className="mt-2 text-gray-600 dark:text-gray-300">Project description here</p>
-                        <a
-                            href="https://github.com/yourusername/project2"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-red-600 hover:underline mt-4 inline-block"
-                        >
-                            View on GitHub
-                        </a>
-                    </div>
-                    {/* Project 3 */}
-                    <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-500 ease-in-out">
-                        <h3 className="text-2xl font-bold">Project 3</h3>
-                        <p className="mt-2 text-gray-600 dark:text-gray-300">Project description here</p>
-                        <a
-                            href="https://github.com/yourusername/project3"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-red-600 hover:underline mt-4 inline-block"
-                        >
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </section>
+            <Projects />
 
             {/* Footer Section */}
             <footer className="w-full bg-red-900 text-white py-8 transition-colors duration-500 ease-in-out">

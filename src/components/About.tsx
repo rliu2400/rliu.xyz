@@ -2,7 +2,7 @@ export default function About() {
     return (
         <section className="w-full min-h-screen flex items-center justify-center py-24">
             {/* Floating Div with Rounded Corners */}
-            <div className="max-w-4xl bg-white dark:bg-gray-800 p-8 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg transition-colors duration-500 ease-in-out">
+            <div className="max-w-4xl bg-white dark:bg-gray-800 p-8 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg transition-colors duration-500 ease-in-out fade-in-move-up">
                 <div className="flex flex-col md:flex-row items-center gap-8">
                     
                     {/* Image Section */}
