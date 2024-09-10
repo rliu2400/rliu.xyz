@@ -17,7 +17,7 @@ export default function Education() {
         const visibleHeight = visibleTop - visibleBottom;
 
         // Ensure that opacity increases as more of the section becomes visible
-        let opacityValue = .2 + visibleHeight / rect.height;
+        let opacityValue = visibleHeight / rect.height;
 
         if (opacityValue > 1) {
             opacityValue = 1;
@@ -39,7 +39,7 @@ export default function Education() {
         <section
             ref={sectionRef}
             className="max-w-4xl flex items-center justify-center py-24"
-            style={{ opacity, transition: "opacity 0.05s ease-in-out" }} // Added smooth transition here
+            style={{ opacity }} // Added smooth transition here
         >
             <div className="w-full h-full bg-white dark:bg-gray-800 p-8 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg transition-colors duration-500 ease-in-out">
                 <h2 className="text-4xl font-semibold text-center mb-8">Education</h2>
