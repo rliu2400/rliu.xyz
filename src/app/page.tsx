@@ -21,10 +21,10 @@ export default function Home() {
             <Education />
 
             {/* Resume Section */}
-            <Resume />
+            { /* <Resume /> */ }
 
             {/* Projects Section */}
-            <Projects />
+            { /* <Projects /> */ }
 
             {/* Footer Section */}
             <Footer />
