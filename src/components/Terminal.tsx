@@ -45,12 +45,10 @@ export default function Terminal() {
     };
 
     const handleCommand = (cmd: string) => {
-        const args = cmd.trim().split(/\s+/);
-        const command = args.slice(0, 2).join(" "); // Combine the first two words as the command
-        const restArgs = args.slice(2); // The rest are considered as additional arguments
+        const [command, ...args] = cmd.split(" ");
 
-        if (commands[command]) {
-            return commands[command](...restArgs);
+        if (command in commands) {
+            return (commands[command as keyof typeof commands] as Function)(...args);
         } else {
             return `${command}: command not found`;
         }
