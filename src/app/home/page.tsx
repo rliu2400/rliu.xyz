@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import Header from "@/components/Header";
 import TitleAnimation from "@/components/TitleAnimation";
 import About from "@/components/About";
@@ -18,19 +16,23 @@ export default function Home() {
             <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-black via-transparent to-black opacity-60"></div>
             
             <div className="relative z-10 justify-center items-center">
+                {/* Header */}
+                <Header />
 
-                {/* Title Animation */}
-                <TitleAnimation/>
+                {/* About Section */}
+                <About />
 
-                <div className="flex items-center justify-center h-24 z-50">
-                    <Image
-                        src="/images/selfie.png" // Path relative to the /public folder
-                        width={500}  // Set desired width
-                        height={200} // Set desired height
-                        className = "z-50"
-                    />
-                </div>
+                {/* Education Section */}
+                <Education />
 
+                {/* Resume Section */}
+                <Resume />
+
+                {/* Projects Section */}
+                <Projects />
+
+                {/* Footer Section */}
+                <Footer />
             </div>
         </div>
     );

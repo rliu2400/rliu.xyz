@@ -75,11 +75,11 @@ export default function Terminal() {
     }, [history]);
 
     return (
-        <section className="min-w-1xl w-1/3 h-1/6 absolute bottom-96 left-6">
+        <section className="min-w-1xl w-1/3 h-1/6 absolute bottom-72 left-12">
             <div className="bg-black terminal">
                 <div
                     ref={terminalHistoryRef}
-                    className="terminal-history overflow-y-auto h-64 mb-4 max-h-96"
+                    className="terminal-history overflow-y-auto mb-4 h-48 max-h-96"
                 >
                     {history.map((entry, index) => (
                         <div key={index}>{entry}</div>

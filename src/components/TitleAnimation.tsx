@@ -1,11 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function TypingAnimation() {
-    const text = "HI, I'M RYAN"; // The text to be typed
+export default function TitleAnimation() {
+    const text = "HI. I'M RYAN"; // The text to be typed
     const [displayedText, setDisplayedText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
-    const [index, setIndex] = useState(0);
     const [speed, setSpeed] = useState(150); // Typing speed
     const [isStarted, setIsStarted] = useState(false); // Track when typing starts
 
@@ -40,7 +39,6 @@ export default function TypingAnimation() {
             // If all characters are deleted, start typing again
             if (isDeleting && displayedText === "") {
                 setIsDeleting(false);
-                setIndex(0);
             }
         };
 
@@ -52,13 +50,18 @@ export default function TypingAnimation() {
     }, [displayedText, isDeleting, speed, isStarted]);
 
     return (
-        <section className="h-1/3 terminal-text">
-            <div className="text-2xl pt-12 text-center fade-in">
-                <p>Welcome to my page.</p>
-            </div>
-            <div className="text-8xl text-center">
-                {displayedText}
+        <section className="h-1/3 terminal-text z-0 py-24">
+            {/* Main Text */}
+            <div className="text-9xl text-left font-bold relative" style={{ transform: "scaleY(1.5)" }}>
+                <span>{displayedText}</span>
                 <span className="blinking-cursor"></span>
+
+                {/* Reflected Text (stretched, with gradient opacity) */}
+                <div className="reflected-text-container absolute top-full left-0 w-full mt-4">
+                    <span className="reflected-text">
+                        {displayedText}
+                    </span>
+                </div>
             </div>
         </section>
     );
