@@ -12,7 +12,7 @@ export default function About() {
                 className="w-2/3 p-8 bg-white dark:bg-gray-800 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg transition-colors duration-500 ease-in-out"
                 style={{ opacity }} // Opacity applied to the inner div
             >
-                <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-300 mb-4">About Me</h2>
+                { /* <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-300 mb-4">About Me</h2> */ }
                 <div className="flex flex-col md:flex-row items-center gap-8">
                     {/* Image Section */}
                     <div className="w-full md:w-1/3">

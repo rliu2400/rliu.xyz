@@ -13,7 +13,7 @@ export default function Projects() {
             style={{ opacity }} // Added smooth transition here
             >
             <div className="max-w-4xl bg-white dark:bg-gray-800 p-8 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg transition-colors duration-500 ease-in-out fade-in-move-up">
-                <h2 className="text-4xl font-semibold text-center mb-8">Projects</h2>
+                { /* <h2 className="text-4xl font-semibold text-center mb-8">Projects</h2> */ }
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-colors duration-500 ease-in-out">
                     {/* Project 1 */}
                     <div className="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-500 ease-in-out">

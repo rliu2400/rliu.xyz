@@ -13,7 +13,7 @@ export default function Resume() {
             >
             {/* Floating Div with Rounded Corners */}
             <div className="max-w-4xl bg-white dark:bg-gray-800 p-8 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg transition-colors duration-500 ease-in-out fade-in-move-up">
-                <h2 className="text-4xl font-semibold text-center mb-8">Resume</h2>
+                { /* <h2 className="text-4xl font-semibold text-center mb-8">Resume</h2> */ }
                 <div className="flex flex-col items-center">
                     <a
                         href="/resume.pdf"
