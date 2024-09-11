@@ -5,14 +5,14 @@ export default function About() {
     const { sectionRef, opacity } = useScrollOpacity();
 
     return (
-        <section className="w-full flex items-center justify-center py-6 fade-in">
+        <section className="w-full flex items-center justify-center py-6 fade-in-move-up">
             {/* Floating Div with Rounded Corners */}
             <div
                 ref={sectionRef} // Apply ref to the inner div for scroll tracking
                 className="w-2/3 p-8 bg-white dark:bg-gray-800 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg transition-colors duration-500 ease-in-out"
                 style={{ opacity }} // Opacity applied to the inner div
             >
-                <h2 className="text-4xl text-center terminal-text mb-4">About Me</h2>
+                <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-300 mb-4">About Me</h2>
                 <div className="flex flex-col md:flex-row items-center gap-8">
                     {/* Image Section */}
                     <div className="w-full md:w-1/3">
