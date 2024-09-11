@@ -53,12 +53,12 @@ export default function TypingAnimation() {
 
     return (
         <section className="h-1/3 terminal-text">
-            <div className="text-8xl pt-24 text-center">
+            <div className="text-2xl pt-12 text-center fade-in">
+                <p>Welcome to my page.</p>
+            </div>
+            <div className="text-8xl text-center">
                 {displayedText}
                 <span className="blinking-cursor"></span>
-            </div>
-            <div className="text-2xl text-center fade-in">
-                <p>Welcome to my page.</p>
             </div>
         </section>
     );

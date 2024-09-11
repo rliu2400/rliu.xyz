@@ -75,8 +75,8 @@ export default function Terminal() {
     }, [history]);
 
     return (
-        <section className="w-full h-[calc(100vh/3)] flex items-center justify-center fade-in">
-            <div className="max-w-4xl w-full p-4 bg-black text-green-600 terminal">
+        <section className="w-full h-1/6 pb-6 flex items-center justify-center">
+            <div className="max-w-4xl w-full h-full p-4 bg-black text-green-600 terminal">
                 <div
                     ref={terminalHistoryRef}
                     className="terminal-history overflow-y-auto h-64 mb-4 max-h-96"
