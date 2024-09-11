@@ -43,8 +43,8 @@ export default function Header() {
             </div>
 
             {/* Center: Greeting */}
-            <div className="text-2xl font-bold transition-all duration-500 ease-in-out">
-                Hi, I'm Ryan Liu
+            <div className="text-4xl transition-all duration-500 ease-in-out">
+                {"<| <<== Hi, I'm Ryan Liu ==>> |>"}
             </div>
 
             {/* Right: Dark Mode Toggle */}
