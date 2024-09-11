@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import TitleAnimation from "@/components/TitleAnimation";
 import About from "@/components/About";
 import Education from "@/components/Education";
 import Resume from "@/components/Resume";
@@ -13,6 +14,8 @@ export default function Home() {
         >
             {/* Header */}
             <Header />
+
+            <TitleAnimation />
 
             {/* About Section */}
             <About />
