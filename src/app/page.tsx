@@ -4,6 +4,7 @@ import Education from "@/components/Education";
 import Resume from "@/components/Resume";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
+import Terminal from "@/components/Terminal";
 
 export default function Home() {
     return (
@@ -13,6 +14,9 @@ export default function Home() {
         >
             {/* Header */}
             <Header />
+
+            {/* Terminal */}
+            <Terminal />
 
             {/* About Section */}
             <About />
