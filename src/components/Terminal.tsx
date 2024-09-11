@@ -28,19 +28,20 @@ export default function Terminal() {
             return "";
         },
         help: () => "Available commands: ls, cd <dir>, pwd, clear, help, darkmode",
-
-        // Dark mode commands
-        "darkmode toggle": () => {
-            toggleDarkMode();
-            return `Dark mode toggled. Current mode: ${darkMode ? "off" : "on"}`;
-        },
-        "darkmode on": () => {
-            turnOnDarkMode();
-            return "Dark mode turned on";
-        },
-        "darkmode off": () => {
-            turnOffDarkMode();
-            return "Dark mode turned off";
+        darkmode: (arg?: string) => {
+            switch (arg) {
+                case "on":
+                    turnOnDarkMode();
+                    return "Dark mode turned on";
+                case "off":
+                    turnOffDarkMode();
+                    return "Dark mode turned off";
+                case "toggle":
+                    toggleDarkMode();
+                    return `Dark mode toggled. Current mode: ${darkMode ? "off" : "on"}`;
+                default:
+                    return "Usage: darkmode [on|off|toggle]";
+            }
         }
     };
 
@@ -48,6 +49,7 @@ export default function Terminal() {
         const [command, ...args] = cmd.split(" ");
 
         if (command in commands) {
+            // Pass the first argument (if available) to the command
             return (commands[command as keyof typeof commands] as Function)(...args);
         } else {
             return `${command}: command not found`;
@@ -97,3 +99,4 @@ export default function Terminal() {
         </section>
     );
 }
+
