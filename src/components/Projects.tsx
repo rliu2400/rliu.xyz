@@ -1,6 +1,17 @@
+"use client";
+import { useScrollOpacity } from "@/hooks/useScrollOpacity";
+
 export default function Projects() {
+
+    const { sectionRef, opacity } = useScrollOpacity();
+
     return (
-        <section className="w-full flex items-center justify-center py-24">
+        <section 
+            
+            ref={sectionRef}
+            className="w-full flex items-center justify-center py-24"
+            style={{ opacity }} // Added smooth transition here
+            >
             <div className="max-w-4xl bg-white dark:bg-gray-800 p-8 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg transition-colors duration-500 ease-in-out fade-in-move-up">
                 <h2 className="text-4xl font-semibold text-center mb-8">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-colors duration-500 ease-in-out">

@@ -10,15 +10,25 @@ export const useScrollOpacity = () => {
         const rect = sectionRef.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-        const visibleTop = Math.min(rect.bottom, windowHeight);
-        const visibleBottom = Math.max(rect.top, 0);
-        const visibleHeight = visibleTop - visibleBottom;
+        // Distance A: Distance from the bottom of the div to the top of the viewport
+        const distanceA = rect.bottom;
 
-        let opacityValue = visibleHeight / rect.height;
+        // Distance B: Distance from the top of the div to the bottom of the viewport
+        const distanceB = windowHeight - rect.top;
+
+        // If distance A is less, use it to calculate opacity; otherwise, use distance B
+        let distance = Math.min(distanceA, distanceB);
+
+        // Normalize the distance and calculate opacity
+        // We divide by windowHeight to keep the opacity in range [0, 1]
+        let opacityValue = 5 / 2 * distance / windowHeight;
+
+        // Ensure opacity is capped at 1
         if (opacityValue > 1) {
             opacityValue = 1;
         }
 
+        // Set the opacity based on the smaller distance
         setOpacity(opacityValue);
     };
 
@@ -33,4 +43,3 @@ export const useScrollOpacity = () => {
 
     return { sectionRef, opacity };
 };
-
