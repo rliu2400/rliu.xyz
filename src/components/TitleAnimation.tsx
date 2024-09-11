@@ -7,8 +7,20 @@ export default function TypingAnimation() {
     const [isDeleting, setIsDeleting] = useState(false);
     const [index, setIndex] = useState(0);
     const [speed, setSpeed] = useState(150); // Typing speed
+    const [isStarted, setIsStarted] = useState(false); // Track when typing starts
 
     useEffect(() => {
+        // Initial delay before typing starts
+        const startDelay = setTimeout(() => {
+            setIsStarted(true);
+        }, 500); // 500ms delay before typing starts
+
+        return () => clearTimeout(startDelay);
+    }, []);
+
+    useEffect(() => {
+        if (!isStarted) return; // Prevent typing before the delay
+
         const handleTyping = () => {
             if (isDeleting) {
                 // Deleting characters
@@ -37,7 +49,7 @@ export default function TypingAnimation() {
 
         // Cleanup the timeout
         return () => clearTimeout(timeout);
-    }, [displayedText, isDeleting, speed]);
+    }, [displayedText, isDeleting, speed, isStarted]);
 
     return (
         <section className="h-1/3 terminal-text">
