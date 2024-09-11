@@ -9,7 +9,7 @@ export default function About() {
             {/* Floating Div with Rounded Corners */}
             <div
                 ref={sectionRef} // Apply ref to the inner div for scroll tracking
-                className="max-w-4xl w-full p-8 bg-white dark:bg-gray-800 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg"
+                className="max-w-4xl w-full p-8 bg-white dark:bg-gray-800 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg transition-colors duration-500 ease-in-out"
                 style={{ opacity }} // Opacity applied to the inner div
             >
                 <div className="flex flex-col md:flex-row items-center gap-8">

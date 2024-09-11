@@ -85,11 +85,11 @@ export default function Terminal() {
                         <div key={index}>{entry}</div>
                     ))}
                 </div>
-                <form onSubmit={onSubmit}>
+                <form onSubmit={onSubmit} className="flex w-full">
                     <span className="text-blue-500">{getPrompt()}</span> {/* The prompt displayed before the input */}
                     <input
                         type="text"
-                        className="bg-transparent outline-none text-white w-3/4"
+                        className="bg-transparent outline-none text-white"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         autoFocus
