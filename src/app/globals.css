@@ -109,7 +109,7 @@ body::-webkit-scrollbar {
   height: 400px;
   background-color: #000000;
   color: #00ff00;
-  font-family: 'Fira Code', monospace;
+  font-family: var(--font-fixedSys), monospace;
   overflow-y: auto;
   padding: 16px;
   border-radius: 8px;

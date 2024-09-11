@@ -20,7 +20,6 @@ export const useScrollOpacity = () => {
         let distance = Math.min(distanceA, distanceB);
 
         // Normalize the distance and calculate opacity
-        // We divide by windowHeight to keep the opacity in range [0, 1]
         let opacityValue = 5 / 2 * distance / windowHeight;
 
         // Ensure opacity is capped at 1

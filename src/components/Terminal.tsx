@@ -42,11 +42,11 @@ export default function TerminalSection() {
     };
 
     const getPrompt = () => {
-        return `ryanliu@portfolio:${currentDir} $`; // Customizable prompt with username, directory, and symbol
+        return `user@headinmyhands:${currentDir} $`; // Customizable prompt with username, directory, and symbol
     };
 
     return (
-        <section className="w-full flex items-center justify-center py-24 fade-in-move-up">
+        <section className="w-full flex items-center justify-center py-24 fade-in">
             <div className="max-w-4xl w-full p-4 bg-black text-green-500 rounded-lg shadow-lg">
                 <h2 className="text-2xl text-center text-white mb-4">Terminal</h2>
                 <div className="terminal-history overflow-y-auto h-64 mb-4">
