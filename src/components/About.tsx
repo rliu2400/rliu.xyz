@@ -2,19 +2,17 @@
 import { useScrollOpacity } from "@/hooks/useScrollOpacity";
 
 export default function About() {
-
     const { sectionRef, opacity } = useScrollOpacity();
 
     return (
-        <section
-            ref = {sectionRef}
-            className="w-full flex items-center justify-center py-24"
-            style = {{ opacity }}
-        >
+        <section className="w-full flex items-center justify-center py-24 h-screen fade-in">
             {/* Floating Div with Rounded Corners */}
-            <div className="max-w-4xl bg-white dark:bg-gray-800 p-8 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg transition-colors duration-500 fade-in-move-up ease-in-out">
+            <div
+                ref={sectionRef} // Apply ref to the inner div for scroll tracking
+                className="max-w-4xl w-full p-8 bg-white dark:bg-gray-800 bg-opacity-80 dark:bg-opacity-80 rounded-lg shadow-lg"
+                style={{ opacity }} // Opacity applied to the inner div
+            >
                 <div className="flex flex-col md:flex-row items-center gap-8">
-                    
                     {/* Image Section */}
                     <div className="w-full md:w-1/3">
                         <img
@@ -31,10 +29,10 @@ export default function About() {
                             I'm Ryan Liu, a Computer Science and Mathematics student at Northwestern University.
                         </p>
                         <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
-                            I specialize in developing efficient algorithms, working on full-stack applications, and exploring cutting-edge technologies. In my free time, I enjoy competitive programming, playing badminton, and taking risks.
+                            I specialize in developing efficient algorithms, working on full-stack applications, and exploring cutting-edge technologies.
                         </p>
                         <p className="text-lg text-gray-700 dark:text-gray-300">
-                            Whether it's designing complex systems or interacting with people, I’m always driven to push boundaries (ha) (haha) and build things that make a difference.
+                            I’m always driven to push boundaries and build things that make a difference.
                         </p>
                     </div>
                 </div>

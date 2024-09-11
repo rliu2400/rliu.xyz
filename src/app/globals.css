@@ -124,3 +124,24 @@ body::-webkit-scrollbar {
 .terminal-history {
   overflow-y: auto;
 }
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 10px; /* Width of the rectangle cursor */
+  height: 1.2em; /* Height equal to line height */
+  background-color: #00ff00; /* Same as the text color */
+  animation: blink 1s step-start infinite;
+  vertical-align: middle;
+}
