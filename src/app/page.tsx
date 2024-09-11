@@ -12,25 +12,30 @@ export default function Home() {
             className="min-h-screen flex flex-col items-center bg-fixed bg-cover bg-center text-gray-800 dark:text-gray-100 font-fira-code"
             style={{ backgroundImage: 'url("/images/hacker_cat_red.jpg")' }} // Apply background image
         >
-            {/* Header */}
-            <Header />
+            {/* Vignette */}
+            <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-black via-transparent to-black opacity-60"></div>
+            
+            <div className="relative z-10 justify-center items-center">
+                {/* Header */}
+                <Header />
 
-            <TitleAnimation />
+                <TitleAnimation />
 
-            {/* About Section */}
-            <About />
+                {/* About Section */}
+                <About />
 
-            {/* Education Section */}
-            <Education />
+                {/* Education Section */}
+                <Education />
 
-            {/* Resume Section */}
-            <Resume />
+                {/* Resume Section */}
+                <Resume />
 
-            {/* Projects Section */}
-            <Projects />
+                {/* Projects Section */}
+                <Projects />
 
-            {/* Footer Section */}
-            <Footer />
+                {/* Footer Section */}
+                <Footer />
+            </div>
         </div>
     );
 }

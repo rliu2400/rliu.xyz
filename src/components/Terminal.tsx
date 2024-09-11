@@ -64,7 +64,7 @@ export default function Terminal() {
     };
 
     const getPrompt = () => {
-        return `user@headinmyhands:${currentDir} $`; // Customizable prompt with username, directory, and symbol
+        return `user@headinmyhands: ${currentDir} $`; // Customizable prompt with username, directory, and symbol
     };
 
     // Scroll the terminal history div to the bottom whenever the history changes
@@ -86,7 +86,7 @@ export default function Terminal() {
                     ))}
                 </div>
                 <form onSubmit={onSubmit} className="flex w-full">
-                    <span className="text-blue-500">{getPrompt()}</span> {/* The prompt displayed before the input */}
+                    <span className="text-blue-500">{getPrompt()}&nbsp;</span> {/* The prompt displayed before the input */}
                     <input
                         type="text"
                         className="bg-transparent outline-none text-white"
