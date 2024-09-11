@@ -36,7 +36,7 @@ export default function Footer() {
                     </a>
                     {/* Codeforces Icon */}
                     <a
-                        href="https://codeforces.com/profile/rliu2400"
+                        href="https://codeforces.com/profile/GreatSageEqualToHeaven"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-300"
@@ -50,7 +50,7 @@ export default function Footer() {
                     </a>
                     {/* Leetcode Icon */}
                     <a
-                        href="https://leetcode.com/rliu2400/"
+                        href="https://leetcode.com/u/GreatSageEqualToHeaven/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-300"
@@ -64,7 +64,7 @@ export default function Footer() {
                     </a>
                     {/* Instagram Icon */}
                     <a
-                        href="https://instagram.com/yourusername"
+                        href="https://www.instagram.com/headinmyhands_/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-300"
@@ -78,7 +78,7 @@ export default function Footer() {
                     </a>
                     {/* Goodreads Icon */}
                     <a
-                        href="https://goodreads.com/yourusername"
+                        href="goodreads.com/handsinmyhead"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-300"
@@ -92,7 +92,7 @@ export default function Footer() {
                     </a>
                     {/* Spotify Icon */}
                     <a
-                        href="https://open.spotify.com/user/yourusername"
+                        href="https://open.spotify.com/user/m9ejr9u1owzz7hrovzsbpdp3y"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-300"
