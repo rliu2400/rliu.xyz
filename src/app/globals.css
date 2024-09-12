@@ -43,13 +43,29 @@ body::-webkit-scrollbar {
 @keyframes fadeInMoveUp {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
+@keyframes fadeOutMoveUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px); /* Move up by 100px */
+  }
+}
+
+.fade-out-move-up {
+  animation: fadeOutMoveUp 0.8s ease forwards; /* Duration of the fade out and move up */
+}
+
 
 @keyframes fadeOutMoveDown {
   0% {
