@@ -24,9 +24,10 @@ export default function Home() {
 
                 <div className="flex items-center justify-center h-24 z-50">
                     <Image
-                        src="/images/selfie.png" // Path relative to the /public folder
-                        width={500}  // Set desired width
-                        height={200} // Set desired height
+                        src="/images/selfie.png"
+                        width={500}
+                        height={200}
+                        alt="A selfie image" // hehe
                         className = "z-50"
                     />
                 </div>
