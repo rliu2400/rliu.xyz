@@ -28,7 +28,7 @@ export default function Home() {
                         width={500}
                         height={200}
                         alt="A selfie image" // hehe
-                        className = "z-50"
+                        className = "z-50 rounded-lg shadow-lg fade-bottom"
                     />
                 </div>
 
