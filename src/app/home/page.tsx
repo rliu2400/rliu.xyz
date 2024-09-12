@@ -31,8 +31,6 @@ export default function Home() {
                 {/* Projects Section */}
                 <Projects />
 
-                {/* Footer Section */}
-                <Footer />
             </div>
         </div>
     );

@@ -50,7 +50,7 @@ export default function Welcome() {
                 </div>
 
                 <div className="relative text-center z-20 text-3xl font-bold animate-bounce" style={{ color: '#ff0000' }}>
-                    Press Enter to start >>
+                    Press Enter to start {'>>'}
                 </div>
             </div>
         </div>
