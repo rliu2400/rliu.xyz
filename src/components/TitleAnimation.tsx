@@ -50,7 +50,7 @@ export default function TitleAnimation() {
     }, [displayedText, isDeleting, speed, isStarted]);
 
     return (
-        <section className="h-1/3 terminal-text z-0 py-24">
+        <section className="h-1/3 terminal-text z-0 py-24 fade-in">
             {/* Main Text */}
             <div className="text-9xl text-left font-bold relative" style={{ transform: "scaleY(1.5)" }}>
                 <span>{displayedText}</span>

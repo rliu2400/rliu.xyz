@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
     return (
         <div
-            className="min-h-screen flex flex-col items-center bg-fixed bg-cover bg-center text-gray-800 dark:text-gray-100 font-fira-code"
+            className="min-h-screen flex flex-col items-center bg-fixed bg-cover bg-center text-gray-800 dark:text-gray-100 font-fira-code fade-in"
             style={{ backgroundImage: 'url("/images/hacker_cat_red.jpg")' }} // Apply background image
         >
             {/* Vignette */}
