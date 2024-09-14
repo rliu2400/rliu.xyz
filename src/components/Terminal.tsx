@@ -4,12 +4,29 @@ import useDarkMode from "@/hooks/useDarkMode";
 
 export default function Terminal() {
     const [input, setInput] = useState("");
-    const [history, setHistory] = useState<string[]>([]);
+    const [history, setHistory] = useState<React.ReactNode[]>([]);
     const [currentDir, setCurrentDir] = useState("~"); // Emulate starting directory
     const terminalHistoryRef = useRef<HTMLDivElement>(null); // Reference to the terminal history div
 
     // Dark Mode hook
     const { darkMode, toggleDarkMode, turnOnDarkMode, turnOffDarkMode } = useDarkMode();
+
+    const welcomeMessage = (
+        <div>
+            <p>Welcome to LIU rush 1.0.0 (Custom/Next.js Terminal v1 x86_64)</p>
+            <br />
+            <p>* Documentation: This is all you get</p>
+            <p>* Management: Me I guess</p>
+            <p>* Support: You're on your own</p>
+            <br />
+            <p>* Rush, short for "Ruyi Shell," is here to assist (or confuse) you.</p>
+            <p>Enjoy your journey through my website.</p>
+            <p>This terminal kinda sucks.</p>
+            <p>It's clearly not 1:1 to an actual terminal but whatever</p>
+            <br />
+            <p>Need help? Try the 'help' command.</p>
+        </div>
+    );
 
     // Commands supported by the terminal
     const commands = {
@@ -27,7 +44,24 @@ export default function Terminal() {
             setHistory([]);
             return "";
         },
-        help: () => "Available commands: ls, cd <dir>, pwd, clear, help, darkmode",
+        help: () => (
+            <>
+              <p>LIU rush, version 1.0.0-release</p>
+              <p>Rush, short for "Ruyi Shell," is here to assist (or confuse) you.</p>
+              <p>These shell commands are defined internally. Type 'help' to see this list.</p>
+              <p>Type 'help name' to find out more about the function 'name'.</p>
+              <p>Use 'info rush' to find out more about the shell in general. It probably won't help. This is all you get.</p>
+              <p>Commands:</p>
+              <ul>
+                <li>ls</li>
+                <li>cd [dir]</li>
+                <li>pwd</li>
+                <li>clear</li>
+                <li>help</li>
+                <li>darkmode</li>
+              </ul>
+            </>
+          ),
         darkmode: (arg?: string) => {
             switch (arg) {
                 case "on":
@@ -74,22 +108,26 @@ export default function Terminal() {
         }
     }, [history]);
 
+    useEffect(() => {
+        setHistory([welcomeMessage]);
+    }, []);
+
     return (
-        <section className="min-w-1xl w-1/3 h-1/6 absolute bottom-72 left-12">
-            <div className="bg-black terminal">
+        <section className="w-1/3 h-screen fixed top-0 left-0 p-6 fade-in">
+            <div className="bg-black h-full flex flex-col p-6 rounded-lg">
                 <div
                     ref={terminalHistoryRef}
-                    className="terminal-history overflow-y-auto mb-4 h-48 max-h-96"
+                    className="terminal-history terminal-text overflow-y-auto"
                 >
                     {history.map((entry, index) => (
                         <div key={index}>{entry}</div>
                     ))}
                 </div>
                 <form onSubmit={onSubmit} className="flex w-full">
-                    <span className="text-blue-500">{getPrompt()}&nbsp;</span> {/* The prompt displayed before the input */}
+                    <span className="text-blue-500" >{getPrompt()}&nbsp;</span> {/* The prompt displayed before the input */}
                     <input
                         type="text"
-                        className="bg-transparent outline-none text-white"
+                        className="bg-transparent outline-none text-white flex-grow"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         autoFocus
