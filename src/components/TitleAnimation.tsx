@@ -12,7 +12,7 @@ export default function TitleAnimation() {
         // Initial delay before typing starts
         const startDelay = setTimeout(() => {
             setIsStarted(true);
-        }, 500); // 500ms delay before typing starts
+        }, 1000); // 500ms delay before typing starts
 
         return () => clearTimeout(startDelay);
     }, []);
