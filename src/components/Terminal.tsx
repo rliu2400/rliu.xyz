@@ -13,9 +13,9 @@ export default function Terminal() {
 
     const welcomeMessage = (
         <div>
-            <p>Welcome to LIU rush 1.0.0 (Custom/Next.js Terminal v1 x86_64)</p>
+            <p>Welcome to LIU rush 1.0.0 (Custom/Next.js Terminal v1 x86_69)</p>
             <br />
-            <p>* Documentation: This is all you get</p>
+            <p>* Documentation: No documentation (loool)</p>
             <p>* Management: Me I guess</p>
             <p>* Support: You're on your own</p>
             <br />
@@ -114,7 +114,7 @@ export default function Terminal() {
 
     return (
         <section className="w-1/3 h-screen fixed top-0 left-0 p-6 fade-in">
-            <div className="bg-black h-full flex flex-col p-6 rounded-lg">
+            <div className="bg-gray-900 h-full flex flex-col p-6 rounded-lg">
                 <div
                     ref={terminalHistoryRef}
                     className="terminal-history terminal-text overflow-y-auto"
