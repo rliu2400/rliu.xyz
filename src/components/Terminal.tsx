@@ -113,7 +113,7 @@ export default function Terminal() {
     }, []);
 
     return (
-        <section className="w-1/3 h-screen fixed top-0 left-0 p-6 fade-in">
+        <section className="w-1/2 h-screen fixed top-0 left-0 p-6 fade-in">
             <div className="bg-gray-900 h-full flex flex-col p-6 rounded-lg">
                 <div
                     ref={terminalHistoryRef}
