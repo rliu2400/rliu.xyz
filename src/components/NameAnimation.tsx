@@ -2,17 +2,16 @@
 import { useEffect, useState } from "react";
 
 export default function TitleAnimation() {
-    const text = "HI. I'M RYAN"; // The text to be typed
+    const text = "HI. I'M RYAN";
     const [displayedText, setDisplayedText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
     const [speed, setSpeed] = useState(150); // Typing speed
     const [isStarted, setIsStarted] = useState(false); // Track when typing starts
 
     useEffect(() => {
-        // Initial delay before typing starts
         const startDelay = setTimeout(() => {
             setIsStarted(true);
-        }, 1000); // 500ms delay before typing starts
+        }, 1000); // 1s delay before typing starts
 
         return () => clearTimeout(startDelay);
     }, []);
@@ -50,7 +49,7 @@ export default function TitleAnimation() {
     }, [displayedText, isDeleting, speed, isStarted]);
 
     return (
-        <section className="h-1/3 terminal-text z-0 py-24 fade-in">
+        <section className="h-1/3 font-fira-code z-0 py-24 fade-in">
             {/* Main Text */}
             <div className="text-9xl text-left font-bold relative" style={{ transform: "scaleY(1.5)" }}>
                 <span>{displayedText}</span>

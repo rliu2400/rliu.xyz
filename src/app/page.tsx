@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import TitleAnimation from "@/components/TitleAnimation";
+import NameAnimation from "@/components/NameAnimation";
 
 export default function Welcome() {
     const router = useRouter();
@@ -37,7 +37,7 @@ export default function Welcome() {
             {/* Only content should fade out */}
             <div className={`relative z-10 justify-center items-center transition-opacity duration-800 ${isAnimating ? "fade-out-move-up" : ""}`}>
                 {/* Title Animation */}
-                <TitleAnimation />
+                <NameAnimation />
 
                 <div className="flex items-center justify-center h-24 py-18">
                     <Image

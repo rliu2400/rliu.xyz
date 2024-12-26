@@ -1,0 +1,27 @@
+.svg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+}
+
+.boundingBox {
+  stroke: #fff;
+  fill: none;
+  stroke-width: 2px;
+  opacity: 0.8;
+}
+
+.dot {
+  fill: #fff;
+  transition: transform 0.1s ease-in-out;
+}
+
+.trail {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
