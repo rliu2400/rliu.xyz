@@ -1,59 +1,53 @@
-"use client";
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import Image from 'next/image';
-import NameAnimation from "@/components/NameAnimation";
+// app/page.tsx
+import Link from 'next/link';
+import { Metadata } from 'next';
+import NameAnimation from '../components/NameAnimation'
 
-export default function Welcome() {
-    const router = useRouter();
-    const [isAnimating, setIsAnimating] = useState(false);
+export const metadata: Metadata = {
+  title: 'Ryan Liu - Developer Portfolio',
+  description: 'A showcase of Ryan Liu\'s development projects and skills.',
+};
 
-    // Add event listener for "Enter" key press
-    useEffect(() => {
-        const handleKeyPress = (event: KeyboardEvent) => {
-            if (event.key === "Enter") {
-                setIsAnimating(true); // Start the fade-out animation
-                setTimeout(() => {
-                    router.push("/home"); // Navigate to /home after animation
-                }, 800); // Match the duration of the animation (800ms)
-            }
-        };
+const SkillCard = ({ title, skills }: { title: string; skills: string }) => (
+  <div className="bg-black p-6 rounded-lg text-center">
+    <h3 className="font-semibold mb-2">{title}</h3>
+    <p>{skills}</p>
+  </div>
+);
 
-        window.addEventListener("keydown", handleKeyPress);
-
-        // Cleanup the event listener when the component is unmounted
-        return () => {
-            window.removeEventListener("keydown", handleKeyPress);
-        };
-    }, [router]);
-
-    return (
-        <div className="min-h-screen flex flex-col items-center bg-fixed bg-cover bg-center text-gray-800 dark:text-gray-100 font-fira-code fade-in"
-            style={{ backgroundImage: 'url("/images/hacker_cat_red.jpg")' }} // Apply background image
-        >
-            {/* Vignette */}
-            <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-black via-transparent to-black opacity-60"></div>
-            
-            {/* Only content should fade out */}
-            <div className={`relative z-10 justify-center items-center transition-opacity duration-800 ${isAnimating ? "fade-out-move-up" : ""}`}>
-                {/* Title Animation */}
-                <NameAnimation />
-
-                <div className="flex items-center justify-center h-24 py-18">
-                    <Image
-                        src="/images/selfie.png"
-                        width={500}
-                        height={200}
-                        alt="A selfie image"
-                        className="z-10 rounded-lg shadow-lg fade-bottom"
-                    />
-                </div>
-
-                <div className="relative text-center z-20 text-3xl font-bold animate-bounce" style={{ color: '#ff0000' }}>
-                    Press Enter to start {'>>'}
-                </div>
-            </div>
+export default function Home() {
+  return (
+    <main className="bg-black text-red-500 min-h-screen flex flex-col">
+      {/* Hero Section */}
+      <section className="flex-grow flex flex-col items-center justify-center py-20 px-8 md:py-32"> {/* Added more padding on larger screens */}
+        <NameAnimation />
+        <p className="text-lg md:text-xl mb-12 text-center max-w-2xl leading-relaxed"> {/* Added max-width and leading */}
+          Passionate Software Developer specializing in building robust and scalable web applications. I enjoy tackling challenging problems and crafting elegant solutions.
+        </p>
+        <div className="flex space-x-6 md:space-x-8"> {/* Increased spacing */}
+          <Link href="/projects" className="bg-red-500 text-black px-8 py-3 rounded-lg font-medium hover:bg-red-600 transition duration-300"> {/* Added font-medium and transition duration */}
+            View Projects
+          </Link>
+          <Link href="/contact" className="border border-red-500 px-8 py-3 rounded-lg font-medium hover:bg-red-500 hover:text-black transition duration-300"> {/* Added font-medium and transition duration */}
+            Contact Me
+          </Link>
         </div>
-    );
-}
+      </section>
 
+      {/* Skills Section */}
+      <section className="bg-gray-900 py-16 px-8"> {/* Increased padding */}
+        <h2 className="text-3xl font-bold mb-8 text-center tracking-tight">Skills</h2> {/* Increased font size and added tracking */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto"> {/* Added max-width and mx-auto for centering */}
+          <SkillCard title="Frontend" skills="React, Next.js, HTML, CSS, JavaScript, TypeScript, Tailwind CSS" /> {/* Added Tailwind CSS */}
+          <SkillCard title="Backend" skills="Node.js, Express, Python, PostgreSQL, MongoDB, REST APIs" /> {/* Added REST APIs */}
+          <SkillCard title="Tools & Technologies" skills="Git, Docker, AWS, Azure, CI/CD, Agile, Linux" /> {/* Improved category and added more tools */}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 py-6 text-center text-gray-400"> {/* Improved styling */}
+        <p>&copy; {new Date().getFullYear()} Ryan Liu. All rights reserved.</p>
+      </footer>
+    </main>
+  );
+}
