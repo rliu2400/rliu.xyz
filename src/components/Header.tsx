@@ -8,7 +8,8 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ className }) => {
   return (
-    <header className={cn("bg-gray-900 py-4 px-8 w-full sticky top-0 z-50 transition-colors duration-300", className)}> {/* Added sticky, z-index, and transition */}
+    <header className={cn("bg-gray-900 py-4 px-8 w-full sticky top-0 z-50 transition-colors duration-300", className ?? 
+                        "")}>
       <nav className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-xl font-bold text-red-500 hover:text-red-400 transition"> {/* Improved link styling */}
           Ryan Liu
