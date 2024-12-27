@@ -1,4 +1,4 @@
 // lib/utils.ts
-export function cn(...inputs: string[]) {
-  return inputs.filter(Boolean).join(' ');
+export function cn(...classes: (string | undefined)[]) {
+    return classes.filter(Boolean).join(" ");
 }
