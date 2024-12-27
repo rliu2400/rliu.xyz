@@ -1,6 +1,6 @@
 // app/components/Header.tsx
 import Link from 'next/link';
-import { cn } from '@/lib/utils'; // If you have a utility function for conditional class names
+import { cn } from '@/lib/utils';
 
 interface HeaderProps {
   className?: string;
