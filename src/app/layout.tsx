@@ -71,7 +71,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} ${fixedSys.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} ${fixedSys.variable} antialiased font-fira-code font-red-600`}
             >
                 <Header />
                 {children}

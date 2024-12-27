@@ -1,12 +1,32 @@
-"use client";
+// app/components/Header.tsx
+import Link from 'next/link';
+import { cn } from '@/lib/utils'; // If you have a utility function for conditional class names
 
-import Terminal from "@/components/Terminal"; // Import the Terminal component
-
-export default function Header() {
-    return (
-        <header className="fixed bottom-0 left-0 w-full bg-transparent flex justify-center items-center z-[9999]"> 
-            {/* Terminal Section inside the header */}
-            <Terminal />
-        </header>
-    );
+interface HeaderProps {
+  className?: string;
 }
+
+const Header: React.FC<HeaderProps> = ({ className }) => {
+  return (
+    <header className={cn("bg-gray-900 py-4 px-8 w-full sticky top-0 z-50 transition-colors duration-300", className)}> {/* Added sticky, z-index, and transition */}
+      <nav className="container mx-auto flex justify-between items-center">
+        <Link href="/" className="text-xl font-bold text-red-500 hover:text-red-400 transition"> {/* Improved link styling */}
+          Ryan Liu
+        </Link>
+        <div className="flex space-x-6">
+          <Link href="/projects" className="text-gray-300 hover:text-white transition">
+            Projects
+          </Link>
+          <Link href="/contact" className="text-gray-300 hover:text-white transition">
+            Contact
+          </Link>
+          <Link href="/blog" className="text-gray-300 hover:text-white transition">
+            Blog
+          </Link>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
