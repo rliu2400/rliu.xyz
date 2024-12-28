@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
     return (
         <header
             className={cn(
-                "bg-gray-900 py-4 px-8 w-full sticky top-0 z-50 transition-colors duration-300",
+                "bg-gray-900 py-4 px-8 w-full sticky top-0 z-50 transition-colors duration-300 fade-in",
                 className,
             )}
         >

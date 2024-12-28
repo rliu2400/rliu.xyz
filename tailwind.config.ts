@@ -20,11 +20,26 @@ const config: Config = {
 
             animation: {
                 "fade-out-move-up": "fadeOutMoveUp 0.8s ease-in-out forwards",
+                "fade-in-move-up": "fadeInMoveUp 0.8s ease-in-out forwards",
+                "fade-in": "fadeIn 0.8s ease-in-out forwards",
+                "fade-out": "fadeOut 0.8s ease-in-out forwards",
             },
             keyframes: {
                 fadeOutMoveUp: {
                     "0%": { opacity: "1", transform: "translateY(0)" },
                     "100%": { opacity: "0", transform: "translateY(-20px)" },
+                },
+                fadeInMoveUp: {
+                    "100%": { opacity: "1", transform: "translateY(0)" },
+                    "0%": { opacity: "0", transform: "translateY(-20px)" },
+                },
+                fadeIn: {
+                    "0%": { opacity: "1" },
+                    "100%": { opacity: "0" },
+                },
+                fadeOut: {
+                    "100%": { opacity: "1", transform: "translateY(0)" },
+                    "0%": { opacity: "0", transform: "translateY(-20px)" },
                 },
             },
 
