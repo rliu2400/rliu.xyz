@@ -1,7 +1,6 @@
 // app/page.tsx
 import Link from "next/link";
 import { Metadata } from "next";
-import NameAnimation from "../../components/NameAnimation";
 
 export const metadata: Metadata = {
     title: "Ryan Liu - Developer Portfolio",
@@ -22,7 +21,6 @@ export default function Home() {
             <section className="flex-grow flex flex-col items-center justify-center py-20 px-8 md:py-32">
                 {" "}
                 {/* Added more padding on larger screens */}
-                <NameAnimation />
                 <p className="text-lg md:text-xl mb-12 text-center max-w-2xl leading-relaxed">
                     {" "}
                     {/* Added max-width and leading */}
@@ -54,37 +52,29 @@ export default function Home() {
 
             {/* Skills Section */}
             <section className="bg-gray-900 py-16 px-8">
-                {" "}
-                {/* Increased padding */}
                 <h2 className="text-3xl font-bold mb-8 text-center tracking-tight">
                     Skills
-                </h2>{" "}
-                {/* Increased font size and added tracking */}
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-                    {" "}
-                    {/* Added max-width and mx-auto for centering */}
                     <SkillCard
                         title="Frontend"
                         skills="React, Next.js, HTML, CSS, JavaScript, TypeScript, Tailwind CSS"
-                    />{" "}
+                    />
                     {/* Added Tailwind CSS */}
                     <SkillCard
                         title="Backend"
                         skills="Node.js, Express, Python, PostgreSQL, MongoDB, REST APIs"
-                    />{" "}
+                    />
                     {/* Added REST APIs */}
                     <SkillCard
                         title="Tools & Technologies"
                         skills="Git, Docker, AWS, Azure, CI/CD, Agile, Linux"
-                    />{" "}
-                    {/* Improved category and added more tools */}
+                    />
                 </div>
             </section>
 
             {/* Footer */}
             <footer className="bg-gray-800 py-6 text-center text-gray-400">
-                {" "}
-                {/* Improved styling */}
                 <p>
                     &copy; {new Date().getFullYear()} Ryan Liu. All rights
                     reserved.
