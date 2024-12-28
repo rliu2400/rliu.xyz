@@ -16,35 +16,25 @@ const SkillCard = ({ title, skills }: { title: string; skills: string }) => (
 
 export default function Home() {
     return (
-        <main className="text-red min-h-screen flex flex-col">
+        <main className="text-red min-h-screen flex flex-col fade-in">
             {/* Hero Section */}
             <section className="flex-grow flex flex-col items-center justify-center py-20 px-8 md:py-32">
-                {" "}
-                {/* Added more padding on larger screens */}
                 <p className="text-lg md:text-xl mb-12 text-center max-w-2xl leading-relaxed">
-                    {" "}
-                    {/* Added max-width and leading */}
                     Passionate Software Developer specializing in building
                     robust and scalable web applications. I enjoy tackling
                     challenging problems and crafting elegant solutions.
                 </p>
                 <div className="flex space-x-6 md:space-x-8">
-                    {" "}
-                    {/* Increased spacing */}
                     <Link
                         href="/projects"
-                        className="bg-red-500 text-black px-8 py-3 rounded-lg font-medium hover:bg-red-600 transition duration-300"
+                        className="bg-red-600 text-black px-8 py-3 rounded-lg font-medium hover:bg-red-600 transition duration-300"
                     >
-                        {" "}
-                        {/* Added font-medium and transition duration */}
                         View Projects
                     </Link>
                     <Link
                         href="/contact"
-                        className="border border-red-500 px-8 py-3 rounded-lg font-medium hover:bg-red-500 hover:text-black transition duration-300"
+                        className="border border-red-600 px-8 py-3 rounded-lg font-medium hover:bg-red-500 hover:text-black transition duration-300"
                     >
-                        {" "}
-                        {/* Added font-medium and transition duration */}
                         Contact Me
                     </Link>
                 </div>
@@ -60,12 +50,10 @@ export default function Home() {
                         title="Frontend"
                         skills="React, Next.js, HTML, CSS, JavaScript, TypeScript, Tailwind CSS"
                     />
-                    {/* Added Tailwind CSS */}
                     <SkillCard
                         title="Backend"
                         skills="Node.js, Express, Python, PostgreSQL, MongoDB, REST APIs"
                     />
-                    {/* Added REST APIs */}
                     <SkillCard
                         title="Tools & Technologies"
                         skills="Git, Docker, AWS, Azure, CI/CD, Agile, Linux"
@@ -73,7 +61,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Footer */}
             <footer className="bg-gray-800 py-6 text-center text-gray-400">
                 <p>
                     &copy; {new Date().getFullYear()} Ryan Liu. All rights
