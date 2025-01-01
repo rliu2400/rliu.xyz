@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 
 type Achievement = {
   years: string;
@@ -76,29 +76,25 @@ const AchievementsCarousel: React.FC = () => {
     },
   ];
 
-  const [scrolling, setScrolling] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
-
-  const handleScroll = (direction: 'up' | 'down') => {
-    if (scrollRef.current) {
-      const step = direction === 'up' ? -2 : 2; // Scroll speed
-      scrollRef.current.scrollBy({ top: step, behavior: 'smooth' });
-    }
-  };
+  const scrollAnimationRef = useRef<number | null>(null);
 
   const startScroll = (direction: 'up' | 'down') => {
-    setScrolling(true);
-    const scrollInterval = setInterval(() => {
-      if (scrolling) {
-        handleScroll(direction);
-      } else {
-        clearInterval(scrollInterval);
+    const step = direction === 'up' ? -.000001 : .000001; // Adjust step for smoothness
+    const scroll = () => {
+      if (scrollRef.current) {
+        scrollRef.current.scrollBy({ top: step, behavior: 'auto' });
+        scrollAnimationRef.current = requestAnimationFrame(scroll);
       }
-    }, 20);
+    };
+    scrollAnimationRef.current = requestAnimationFrame(scroll);
   };
 
   const stopScroll = () => {
-    setScrolling(false);
+    if (scrollAnimationRef.current !== null) {
+      cancelAnimationFrame(scrollAnimationRef.current);
+      scrollAnimationRef.current = null;
+    }
   };
 
   return (
@@ -122,9 +118,9 @@ const AchievementsCarousel: React.FC = () => {
             key={index}
             className="achievement-item text-center p-4 snap-center bg-black"
           >
-            <h3 className="font-bold">{achievement.name}</h3>
-            <p className="text-sm text-gray-600">{achievement.years}</p>
-            <p className="text-sm">{achievement.description}</p>
+            <h3 className="font-bold text-white">{achievement.name}</h3>
+            <p className="text-sm text-gray-400">{achievement.years}</p>
+            <p className="text-sm text-gray-200">{achievement.description}</p>
           </div>
         ))}
       </div>
