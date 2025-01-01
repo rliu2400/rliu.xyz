@@ -5,32 +5,31 @@ export default function TitleAnimation() {
     const text = "HI. I'M RYAN";
     const [displayedText, setDisplayedText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
-    const [speed, setSpeed] = useState(150); // Typing speed
-    const [isStarted, setIsStarted] = useState(false); // Track when typing starts
+    const [speed, setSpeed] = useState(150);
+    const [isStarted, setIsStarted] = useState(false);
 
     useEffect(() => {
         const startDelay = setTimeout(() => {
             setIsStarted(true);
-        }, 1000); // 1s delay before typing starts
+        }, 1000);
 
         return () => clearTimeout(startDelay);
     }, []);
 
     useEffect(() => {
-        if (!isStarted) return; // Prevent typing before the delay
+        if (!isStarted) return;
 
         const handleTyping = () => {
             if (isDeleting) {
                 // Deleting characters
                 setDisplayedText((prev) => prev.slice(0, -1));
-                setSpeed(75); // Speed up deletion
+                setSpeed(75);
             } else {
                 // Typing characters
                 setDisplayedText((prev) => text.slice(0, prev.length + 1));
-                setSpeed(125); // Normal typing speed
+                setSpeed(125);
             }
 
-            // If typing is complete and we're not deleting
             if (!isDeleting && displayedText === text) {
                 setTimeout(() => setIsDeleting(true), 1500); // Pause before starting to delete
             }
@@ -41,10 +40,8 @@ export default function TitleAnimation() {
             }
         };
 
-        // Set a timeout for typing or deleting characters
         const timeout = setTimeout(handleTyping, speed);
 
-        // Cleanup the timeout
         return () => clearTimeout(timeout);
     }, [displayedText, isDeleting, speed, isStarted]);
 
