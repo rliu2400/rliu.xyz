@@ -19,9 +19,7 @@ export default function Welcome() {
         const handleKeyPress = (event: KeyboardEvent) => {
             if (event.key === "Enter") {
                 setIsAnimating(true);
-                setTimeout(() => {
-                    router.push("/home");
-                }, 800);
+                router.push("/home");
             }
         };
 
