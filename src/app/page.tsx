@@ -9,8 +9,7 @@ export const metadata: Metadata = {
 export default function Home() {
     return (
         <main className="text-red min-h-screen flex flex-col">
-            {/* Hero Section */}
-            <Welcome /> {/* Moved client logic to a separate client component */}
+            <Welcome />
         </main>
     );
 }
