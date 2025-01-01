@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
     darkMode: "class",
@@ -24,6 +25,7 @@ const config: Config = {
                 "fade-in": "fadeIn 0.8s ease-in-out forwards",
                 "fade-out": "fadeOut 0.8s ease-in-out forwards",
             },
+
             keyframes: {
                 fadeOutMoveUp: {
                     "0%": { opacity: "1", transform: "translateY(0)" },
@@ -43,6 +45,10 @@ const config: Config = {
                 },
             },
 
+            textShadow: {
+                glow: "0 0 5px red, 0 0 40px red",
+            },
+
             fontFamily: {
                 "geist-sans": ["var(--font-geist-sans)", "sans-serif"],
                 "geist-mono": ["var(--font-geist-mono)", "monospace"],
@@ -50,7 +56,7 @@ const config: Config = {
             },
         },
     },
-    plugins: [],
+    plugins: [require("tailwindcss-textshadow")],
 };
 
 export default config;
