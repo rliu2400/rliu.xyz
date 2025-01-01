@@ -1,4 +1,5 @@
 import React from "react";
+import AchievementsCarousel from "@/components/AchievementsCarousel";
 
 const AboutPage = () => {
     return (
@@ -17,11 +18,12 @@ const AboutPage = () => {
                 <h2 className="text-3xl font-semibold mb-3">
                     Academic Background
                 </h2>
-                <p className="text-lg leading-relaxed">
+                <p className="text-lg leading-relaxed pb-12">
                     I’m pursuing a Bachelor’s degree in Computer Science and
                     Mathematics at Northwestern University (2023-2026). Here's a
                     list of my achievements below.
                 </p>
+                <AchievementsCarousel />
             </section>
 
             <section className="professional-journey mb-8">
@@ -29,10 +31,9 @@ const AboutPage = () => {
                     Professional Journey
                 </h2>
                 <p className="text-lg leading-relaxed">
-                    I am currently the Head of Analytics at Juxta Technologies,
-                    a health-tech startup where I led the development of
-                    advanced analytics, resulting in a 44% efficiency increase
-                    for patient transporters. Additionally, I have contributed
+                    I am currently working at Juxta Technologies,
+                    a health-tech startup where I lead the development of
+                    advanced analytics. Additionally, I have contributed
                     to cutting-edge research at the Northwestern AI and Security
                     Lab and worked on high-speed data transfer systems at the
                     International Center for Advanced Internet Research.
@@ -57,10 +58,7 @@ const AboutPage = () => {
                     Personal Interests
                 </h2>
                 <p className="text-lg leading-relaxed">
-                    Outside of work, I’m a badminton player and weightlifter who
-                    enjoys combining athletic training with recovery routines.
-                    I’m also interested in fashion, particularly techwear and
-                    minimalist styles that complement my personal aesthetic.
+                    Outside of work, I’m a badminton player and competitive programmer.
                 </p>
             </section>
         </div>
