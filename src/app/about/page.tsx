@@ -3,7 +3,7 @@ import AchievementsCarousel from "@/components/AchievementsCarousel";
 
 const AboutPage = () => {
     return (
-        <div className="about-page-container max-w-4xl mx-auto p-6">
+        <div className="about-page-container max-w-4xl mx-auto p-6 fade-in">
             <section className="introduction mb-8">
                 <h1 className="text-4xl font-bold mb-4">About Me</h1>
                 <p className="text-lg leading-relaxed">
