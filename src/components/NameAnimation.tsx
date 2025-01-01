@@ -48,7 +48,7 @@ export default function TitleAnimation() {
     return (
         <section className="h-1/3 font-fira-code z-0 py-24 fade-in">
             {/* Main Text */}
-            <div className="text-9xl text-left font-bold relative" style={{ transform: "scaleY(1.5)" }}>
+            <div className="text-9xl text-left font-bold relative text-white text-shadow-glow" style={{ transform: "scaleY(1.5)" }}>
                 <span>{displayedText}</span>
                 <span className="blinking-cursor"></span>
 
