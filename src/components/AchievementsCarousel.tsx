@@ -99,7 +99,8 @@ const AchievementsCarousel: React.FC = () => {
 
   return (
     <div className="carousel-container max-w-2md min-w-md mx-auto h-96 overflow-hidden relative border border-gray-300 rounded-lg">
-      <div
+      
+    {/*<div
         className="scroll-area absolute top-0 left-0 right-0 h-1/3 hover:cursor-pointer"
         onMouseEnter={() => startScroll('up')}
         onMouseLeave={stopScroll}
@@ -108,7 +109,7 @@ const AchievementsCarousel: React.FC = () => {
         className="scroll-area absolute bottom-0 left-0 right-0 h-1/3 hover:cursor-pointer"
         onMouseEnter={() => startScroll('down')}
         onMouseLeave={stopScroll}
-      />
+      />*/}
       <div
         ref={scrollRef}
         className="carousel-content h-full overflow-y-scroll snap-y snap-mandatory"
