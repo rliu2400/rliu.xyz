@@ -48,6 +48,12 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                     >
                         Resume
                     </Link>
+                    <Link
+                        href="/transcript.pdf"
+                        className="text-gray-300 hover:text-white transition"
+                    >
+                        Transcript
+                    </Link>
                 </div>
             </nav>
         </header>
