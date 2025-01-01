@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 </Link>
                 <div className="flex space-x-6">
                     <Link
-                        href="/projects"
+                        href="/about"
                         className="text-gray-300 hover:text-white transition"
                     >
                         About
