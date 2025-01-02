@@ -1,6 +1,7 @@
 // app/page.tsx
 import Link from "next/link";
 import { Metadata } from "next";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
     title: "Ryan Liu - Developer Portfolio",
@@ -63,12 +64,8 @@ export default function Home() {
                 </div>
             </section>
 
-            <footer className="bg-gray-800 py-6 text-center text-gray-400">
-                <p>
-                    &copy; {new Date().getFullYear()} Ryan Liu. All rights
-                    reserved.
-                </p>
-            </footer>
+            <Footer />
+
         </main>
     );
 }
