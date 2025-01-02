@@ -49,7 +49,7 @@ export default function NameAnimation() {
     useEffect(() => {
         const cursorBlinkInterval = setInterval(() => {
             setShowCursor((prev) => !prev);
-        }, 700); // Blink every 500ms
+        }, 500); // Blink every 500ms
 
         return () => clearInterval(cursorBlinkInterval);
     }, []);
