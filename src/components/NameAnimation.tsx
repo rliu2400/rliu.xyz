@@ -7,6 +7,7 @@ export default function NameAnimation() {
     const [isDeleting, setIsDeleting] = useState(false);
     const [speed, setSpeed] = useState(150);
     const [isStarted, setIsStarted] = useState(false);
+    const [showCursor, setShowCursor] = useState(true); // State to control cursor blinking
 
     useEffect(() => {
         const startDelay = setTimeout(() => {
@@ -45,12 +46,30 @@ export default function NameAnimation() {
         return () => clearTimeout(timeout);
     }, [displayedText, isDeleting, speed, isStarted]);
 
+    useEffect(() => {
+        const cursorBlinkInterval = setInterval(() => {
+            setShowCursor((prev) => !prev);
+        }, 700); // Blink every 500ms
+
+        return () => clearInterval(cursorBlinkInterval);
+    }, []);
+
     return (
         <section className="h-1/3 font-fira-code z-0 py-24 fade-in">
             {/* Main Text */}
             <div className="text-9xl font-semibold text-left relative text-white" style={{ transform: "scaleY(1.5)" }}>
                 <span className="text-shadow-glow">{displayedText}</span>
-                <span className="blinking-cursor"></span>
+                <span
+                    className="text-shadow-glow"
+                    style={{
+                        opacity: showCursor ? 1 : 0, // Control opacity
+                        display: "inline-block", // Needed for transform to apply correctly
+                        transform: "scaleY(1.3) translateY(6px)", // Scale the block vertically by 1.5
+                        transformOrigin: "bottom",
+                    }}
+                >
+                    ∎
+                </span>
 
                 {/* Reflected Text (stretched, with gradient opacity) */}
                 <div className="reflected-text-container absolute top-full left-0 w-full mt-4 text-shadow-glowSoft">
