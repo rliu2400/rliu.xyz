@@ -42,7 +42,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         style={hovered === 'email' ? hoverStyle : defaultStyle}
                         onMouseEnter={() => setHovered('email')}
-                        onMouseLeave={() => setHovered(null)}
+                        onMouseLeave={() => setHovered('')}
                     >
                         <Image
                             src="/icons/mail.svg"
@@ -61,7 +61,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         style={hovered === 'linkedin' ? hoverStyle : defaultStyle}
                         onMouseEnter={() => setHovered('linkedin')}
-                        onMouseLeave={() => setHovered(null)}
+                        onMouseLeave={() => setHovered('')}
                     >
                         <Image
                             src="/icons/linkedin.svg"
@@ -80,7 +80,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         style={hovered === 'github' ? hoverStyle : defaultStyle}
                         onMouseEnter={() => setHovered('github')}
-                        onMouseLeave={() => setHovered(null)}
+                        onMouseLeave={() => setHovered('')}
                     >
                         <Image
                             src="/icons/github.svg"
@@ -99,7 +99,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         style={hovered === 'codeforces' ? hoverStyle : defaultStyle}
                         onMouseEnter={() => setHovered('codeforces')}
-                        onMouseLeave={() => setHovered(null)}
+                        onMouseLeave={() => setHovered('')}
                     >
                         <Image
                             src="/icons/codeforces.svg"
@@ -120,7 +120,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         style={hovered === 'leetcode' ? hoverStyle : defaultStyle}
                         onMouseEnter={() => setHovered('leetcode')}
-                        onMouseLeave={() => setHovered(null)}
+                        onMouseLeave={() => setHovered('')}
                     >
                         <Image
                             src="/icons/leetcode.svg"
@@ -139,7 +139,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         style={hovered === 'instagram' ? hoverStyle : defaultStyle}
                         onMouseEnter={() => setHovered('instagram')}
-                        onMouseLeave={() => setHovered(null)}
+                        onMouseLeave={() => setHovered('')}
                     >
                         <Image
                             src="/icons/instagram.svg"
@@ -158,7 +158,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         style={hovered === 'goodreads' ? hoverStyle : defaultStyle}
                         onMouseEnter={() => setHovered('goodreads')}
-                        onMouseLeave={() => setHovered(null)}
+                        onMouseLeave={() => setHovered('')}
                     >
                         <Image
                             src="/icons/goodreads.svg"
