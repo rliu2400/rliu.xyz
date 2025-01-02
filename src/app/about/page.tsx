@@ -7,7 +7,7 @@ const AboutPage = () => {
             <section className="introduction mb-8">
                 <h1 className="text-4xl font-bold mb-4">About Me</h1>
                 <p className="text-lg leading-relaxed">
-                    Hi, I’m Ryan, a Computer Science and Mathematics student at
+                    Hi, I’m Ryan, a CS and Math student at
                     Northwestern University. I have a deep passion for solving
                     complex problems through technology, with a focus on
                     full-stack development and machine learning.
@@ -20,8 +20,8 @@ const AboutPage = () => {
                 </h2>
                 <p className="text-lg leading-relaxed pb-12">
                     I’m pursuing a Bachelor’s degree in Computer Science and
-                    Mathematics at Northwestern University (2023-2026). Here's a
-                    list of my achievements below.
+                    Mathematics at Northwestern University (2023-2026). Here are some
+                    of my achievements.
                 </p>
                 <AchievementsCarousel />
             </section>
