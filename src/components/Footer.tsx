@@ -6,6 +6,20 @@ export default function Footer() {
             <div className="flex flex-col items-center">
                 <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
                 <div className="flex gap-6 mt-4">
+                    {/* Email Icon */}
+                    <a
+                        href="mailto:rliu2400@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-gray-300"
+                    >
+                        <Image
+                            src="/icons/mail.svg"
+                            alt="Email"
+                            width={30}
+                            height={30}
+                        />
+                    </a>
                     {/* LinkedIn Icon */}
                     <a
                         href="https://linkedin.com/in/rliu2400"
