@@ -46,7 +46,9 @@ const config: Config = {
             },
 
             textShadow: {
-                glow: "0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 40px red",
+                glow: "0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red, 0 0 160px red",
+                glowSoft:
+                    "0 0 1px red, 0 0 2px red, 0 0 4px red, 0 0 8px red, 0 0 16px red, 0 0 32px red",
             },
 
             fontFamily: {

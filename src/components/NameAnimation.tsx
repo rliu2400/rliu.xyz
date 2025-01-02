@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function TitleAnimation() {
+export default function NameAnimation() {
     const text = "HI. I'M RYAN";
     const [displayedText, setDisplayedText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
@@ -48,12 +48,12 @@ export default function TitleAnimation() {
     return (
         <section className="h-1/3 font-fira-code z-0 py-24 fade-in">
             {/* Main Text */}
-            <div className="text-9xl text-left font-bold relative text-white text-shadow-glow" style={{ transform: "scaleY(1.5)" }}>
-                <span>{displayedText}</span>
+            <div className="text-9xl font-semibold text-left relative text-white" style={{ transform: "scaleY(1.5)" }}>
+                <span className="text-shadow-glow">{displayedText}</span>
                 <span className="blinking-cursor"></span>
 
                 {/* Reflected Text (stretched, with gradient opacity) */}
-                <div className="reflected-text-container absolute top-full left-0 w-full mt-4">
+                <div className="reflected-text-container absolute top-full left-0 w-full mt-4 text-shadow-glowSoft">
                     <span className="reflected-text">
                         {displayedText}
                     </span>
