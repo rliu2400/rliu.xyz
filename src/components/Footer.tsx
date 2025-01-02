@@ -78,7 +78,7 @@ export default function Footer() {
                     </a>
                     {/* Goodreads Icon */}
                     <a
-                        href="goodreads.com/handsinmyhead"
+                        href="https://www.goodreads.com/handsinmyhead"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-300"
@@ -86,20 +86,6 @@ export default function Footer() {
                         <Image
                             src="/icons/goodreads.svg"
                             alt="Goodreads"
-                            width={30}
-                            height={30}
-                        />
-                    </a>
-                    {/* Spotify Icon */}
-                    <a
-                        href="https://open.spotify.com/user/m9ejr9u1owzz7hrovzsbpdp3y"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-gray-300"
-                    >
-                        <Image
-                            src="/icons/spotify.svg"
-                            alt="Spotify"
                             width={30}
                             height={30}
                         />
