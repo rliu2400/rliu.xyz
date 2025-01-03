@@ -35,12 +35,6 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                         Projects
                     </Link>
                     <Link
-                        href="/contact"
-                        className="text-gray-300 hover:bg-white hover:text-black transition"
-                    >
-                        Contact
-                    </Link>
-                    <Link
                         href="/resume.pdf"
                         className="text-gray-300 hover:bg-white hover:text-black transition"
                     >
