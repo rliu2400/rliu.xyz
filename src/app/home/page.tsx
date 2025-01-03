@@ -19,7 +19,7 @@ export default function Home() {
     return (
         <main className="text-red min-h-screen flex flex-col fade-in">
             {/* Hero Section */}
-            <section className="flex-grow flex flex-col items-center justify-center py-20 px-8 md:py-32">
+            <section className="flex-grow flex flex-col items-center justify-center py-20 px-8 h-screen md:py-32">
             {/*<h1 className="text-8xl bg-gradient-to-r from-red-900 to-red via-white bg-clip-text text-transparent">Hey</h1>*/}
 
                 <p className="text-lg md:text-xl mb-12 text-center max-w-2xl leading-relaxed">
