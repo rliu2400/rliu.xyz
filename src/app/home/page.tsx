@@ -29,10 +29,10 @@ export default function Home() {
                 </p>
                 <div className="flex space-x-6 md:space-x-8">
                     <Link
-                        href="/projects"
+                        href="/resume.pdf"
                         className="bg-red-600 text-black px-8 py-3 rounded-lg font-medium hover:bg-red-600 transition duration-300"
                     >
-                        View Projects
+                        View Resume
                     </Link>
                     <Link
                         href="/contact"
