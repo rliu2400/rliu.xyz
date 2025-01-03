@@ -1,13 +1,20 @@
 // app/components/Header.tsx
+"use client";
+
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 interface HeaderProps {
     className?: string;
 }
 
 const Header: React.FC<HeaderProps> = ({ className }) => {
-    return (
+
+    const pathname = usePathname();
+    const showHeader = pathname !== "/";
+
+    return showHeader ? (
         <header
             className={cn(
                 "bg-gray-900 py-4 px-8 w-full sticky top-0 z-50 transition-colors duration-300 fade-in",
@@ -49,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 </div>
             </nav>
         </header>
-    );
+    ) : null;
 };
 
 export default Header;
