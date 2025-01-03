@@ -223,3 +223,35 @@ body::-webkit-scrollbar {
 .headerLink {
     @apply text-gray-300 hover:bg-white hover:text-black transition;
 }
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.header-item {
+    opacity: 0; /* Initially hidden */
+    animation: popIn 0.5s ease-out forwards;
+}
+
+.header-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.header-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.header-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.header-item:nth-child(4) {
+    animation-delay: 0.8s;
+}

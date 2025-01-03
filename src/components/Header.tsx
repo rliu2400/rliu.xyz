@@ -24,25 +24,25 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 <div className="flex space-x-6">
                     <Link
                         href="/about"
-                        className="headerLink"
+                        className="header-item headerLink"
                     >
                         About
                     </Link>
                     <Link
                         href="/projects"
-                        className="headerLink"
+                        className="header-item headerLink"
                     >
                         Projects
                     </Link>
                     <Link
                         href="/resume.pdf"
-                        className="headerLink"
+                        className="header-item headerLink"
                     >
                         Resume
                     </Link>
                     <Link
                         href="/transcript.pdf"
-                        className="headerLink"
+                        className="headeer-item headerLink"
                     >
                         Transcript
                     </Link>
