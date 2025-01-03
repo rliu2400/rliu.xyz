@@ -56,9 +56,6 @@ const config: Config = {
     },
     plugins: [
         require("tailwindcss-textshadow"), // Adds text shadow utilities
-        require("@tailwindcss/forms"), // Adds styles for forms
-        require("@tailwindcss/typography"), // Adds prose classes for rich text
-        require("@tailwindcss/aspect-ratio"), // Adds aspect ratio utilities
         plugin(function ({ addUtilities }) {
             // Example custom plugin for text gradient
             addUtilities({
