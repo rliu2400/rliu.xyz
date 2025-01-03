@@ -62,6 +62,15 @@ const config: Config = {
         plugin(function ({ addUtilities }) {
             // Example custom plugin for text gradient
             addUtilities({
+                ".headerLink": {
+                    color: "rgb(209, 213, 219)",
+                    backgroundColor: "transparent",
+                    transition: "all 0.3s ease-in-out",
+                    "&:hover": {
+                        backgroundColor: "#ffffff",
+                        color: "#000000",
+                    },
+                },
                 ".text-gradient": {
                     background: "linear-gradient(to right, #ff7e5f, #feb47b)",
                     "-webkit-background-clip": "text",
