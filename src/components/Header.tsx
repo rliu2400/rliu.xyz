@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
             <nav className="container mx-auto flex justify-between items-center">
                 <Link
                     href="/home"
-                    className="text-xl font-bold text-red-600 hover:text-black-400 px-8 transition"
+                    className="header-item text-xl font-bold text-red-600 hover:text-black-400 px-8 transition"
                 >
                     R
                 </Link>
