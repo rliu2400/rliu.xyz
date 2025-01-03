@@ -24,25 +24,25 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                 <div className="flex space-x-6">
                     <Link
                         href="/about"
-                        className="text-gray-300 hover:bg-white hover:text-black transition"
+                        className="headerLink"
                     >
                         About
                     </Link>
                     <Link
                         href="/projects"
-                        className="text-gray-300 hover:bg-white hover:text-black transition"
+                        className="headerLink"
                     >
                         Projects
                     </Link>
                     <Link
                         href="/resume.pdf"
-                        className="text-gray-300 hover:bg-white hover:text-black transition"
+                        className="headerLink"
                     >
                         Resume
                     </Link>
                     <Link
                         href="/transcript.pdf"
-                        className="text-gray-300 hover:bg-white hover:text-black transition"
+                        className="headerLink"
                     >
                         Transcript
                     </Link>
