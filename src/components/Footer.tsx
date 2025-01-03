@@ -31,7 +31,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="w-full bg-red-900 text-white py-8">
+        <footer className="w-full bg-blue-950 text-white py-8">
             <div className="flex flex-col items-center">
                 <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
                 <div className="flex gap-6 mt-4">
