@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                     </Link>
                     <Link
                         href="/transcript.pdf"
-                        className="headeer-item headerLink"
+                        className="header-item headerLink"
                     >
                         Transcript
                     </Link>
