@@ -47,27 +47,6 @@ export default function Home() {
             </div>
             </section>
 
-            {/* Skills Section */}
-            <section className="py-16 px-8">
-                <h2 className="text-3xl font-bold mb-8 text-center tracking-tight">
-                    Skills
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-                    <SkillCard
-                        title="Frontend"
-                        skills="React, Next.js, HTML, CSS, JavaScript, TypeScript, Tailwind CSS"
-                    />
-                    <SkillCard
-                        title="Backend"
-                        skills="Node.js, Express, Python, PostgreSQL, MongoDB, REST APIs"
-                    />
-                    <SkillCard
-                        title="Tools & Technologies"
-                        skills="Git, Docker, AWS, Azure, CI/CD, Agile, Linux"
-                    />
-                </div>
-            </section>
-
             <Footer />
 
         </main>
