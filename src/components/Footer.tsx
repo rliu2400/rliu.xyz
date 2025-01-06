@@ -30,7 +30,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="w-full bg-transparent text-white py-8 z-10">
+        <footer className="w-full bg-transparent text-white z-10">
             <div className="flex flex-col items-center">
                 <div className="flex gap-6 mt-4">
                     {/* Email Icon */}
