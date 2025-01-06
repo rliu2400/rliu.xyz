@@ -24,13 +24,13 @@ export default function Home() {
             {/*<h1 className="text-8xl bg-gradient-to-r from-red-900 to-red via-white bg-clip-text text-transparent">Hey</h1>*/}
             
             <Fractal />
-            <div className="w-[60%] bg-slate-900 opacity-75 text-center items-center justify-center">
+            <div className="w-[60%] bg-neutral-900 opacity-75 text-center items-center justify-center">
             <p className="text-lg md:text-xl mb-12 text-center w-full pt-12 px-6 leading-relaxed text-gray-100 z-10">
                 Passionate Software Developer specializing in building
                 robust and scalable web applications. I enjoy tackling
                 challenging problems and crafting elegant solutions.
             </p>
-            <div className="flex space-x-6 md:space-x-8 w-full z-10 py-12">
+            <div className="space-x-6 md:space-x-8 w-full z-10 py-12">
                 <Link
                     href="/resume.pdf"
                     className="border border-red-600 px-8 py-3 rounded-lg font-medium hover:bg-red-500 hover:text-black transition duration-300"
