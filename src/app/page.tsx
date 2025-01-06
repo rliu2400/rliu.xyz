@@ -3,7 +3,6 @@ import Welcome from "../components/Welcome";
 
 export const metadata: Metadata = {
     title: "Ryan Liu - Developer Portfolio",
-    description: "A showcase of Ryan Liu's development projects and skills.",
 };
 
 export default function Home() {
