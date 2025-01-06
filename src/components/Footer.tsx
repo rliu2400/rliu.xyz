@@ -32,7 +32,6 @@ export default function Footer() {
     return (
         <footer className="w-full bg-transparent text-white py-8 z-10">
             <div className="flex flex-col items-center">
-                <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
                 <div className="flex gap-6 mt-4">
                     {/* Email Icon */}
                     <a
