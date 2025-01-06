@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import Footer from "@/components/Footer";
-import Fractal from "../fractal/page";
+import Fractal from "@/components/Fractal";
 
 export const metadata: Metadata = {
     title: "Ryan Liu - Developer Portfolio",
