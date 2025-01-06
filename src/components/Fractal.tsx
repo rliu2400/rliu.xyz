@@ -114,7 +114,7 @@ const FractalCanvas = () => {
 
 const FractalPage = () => {
   return (
-    <div className="fixed w-screen h-screen">
+    <div className="fixed w-screen h-screen z-0">
       <FractalCanvas />
     </div>
   );
