@@ -27,11 +27,10 @@ export default function Footer() {
     };
 
     const imageHoverStyle = {
-        filter: 'invert(0)',
     };
 
     return (
-        <footer className="w-full bg-transparent text-white py-8">
+        <footer className="w-full bg-transparent text-white py-8 z-10">
             <div className="flex flex-col items-center">
                 <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
                 <div className="flex gap-6 mt-4">
