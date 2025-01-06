@@ -35,12 +35,14 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
                     >
                         About
                     </Link>
+                    {/*
                     <Link
                         href="/projects"
                         className="header-item headerLink"
                     >
                         Projects
                     </Link>
+                        */}
                     <Link
                         href="/resume.pdf"
                         className="header-item headerLink"
