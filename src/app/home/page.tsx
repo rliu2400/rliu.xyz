@@ -24,8 +24,8 @@ export default function Home() {
             {/*<h1 className="text-8xl bg-gradient-to-r from-red-900 to-red via-white bg-clip-text text-transparent">Hey</h1>*/}
             
             <Fractal />
-            <div className="w-[60%] bg-black opacity-40 text-center items-center justify-center">
-            <div className="w-full h-full opacity-95">
+            <div className="w-[60%] bg-black bg-opacity-40 text-center items-center justify-center z-10">
+            <div className="w-full h-full">
             <p className="text-lg md:text-xl mb-12 text-center w-full pt-12 px-6 leading-relaxed text-gray-100 z-10">
                 Passionate Software Developer specializing in building
                 robust and scalable web applications. I enjoy tackling
