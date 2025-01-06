@@ -20,11 +20,12 @@ export default function Home() {
     return (
         <main className="text-red min-h-screen flex flex-col fade-in">
             {/* Hero Section */}
-            <section className="flex-grow flex flex-col items-center justify-center py-20 px-8 h-screen md:py-32">
+            <section className="flex-grow flex flex-col items-center justify-center py-20 px-8 min-h-[90%] md:py-32">
             {/*<h1 className="text-8xl bg-gradient-to-r from-red-900 to-red via-white bg-clip-text text-transparent">Hey</h1>*/}
             
             <Fractal />
-            <div className="w-[60%] bg-neutral-900 opacity-75 text-center items-center justify-center">
+            <div className="w-[60%] bg-black opacity-40 text-center items-center justify-center">
+            <div className="w-full h-full opacity-95">
             <p className="text-lg md:text-xl mb-12 text-center w-full pt-12 px-6 leading-relaxed text-gray-100 z-10">
                 Passionate Software Developer specializing in building
                 robust and scalable web applications. I enjoy tackling
@@ -43,6 +44,7 @@ export default function Home() {
                 >
                     Contact Me
                 </Link>
+            </div>
             </div>
             </div>
             </section>
