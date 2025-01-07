@@ -117,7 +117,7 @@ const AchievementsCarousel: React.FC = () => {
         {achievements.map((achievement, index) => (
           <div
             key={index}
-            className="achievement-item text-center p-4 snap-center bg-black"
+            className="achievement-item text-center p-4 snap-center bg-neutral-900"
           >
             <h3 className="font-bold text-white">{achievement.name}</h3>
             <p className="text-sm text-gray-400">{achievement.years}</p>
