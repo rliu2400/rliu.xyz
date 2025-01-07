@@ -67,7 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} ${fixedSys.variable} antialiased font-fira-code font-red-600`}
+                className={`${geistSans.variable} ${geistMono.variable} ${firaCode.variable} ${fixedSys.variable} antialiased font-fira-code text-neutral-100 bg-neutral-900`}
             >
                 <Header />
                 {children}
