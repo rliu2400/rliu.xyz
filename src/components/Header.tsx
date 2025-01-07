@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
     return showHeader ? (
         <header
             className={cn(
-                "bg-transparent py-8 px-8 w-full fixed top-0 z-50 transition-colors duration-300 fade-in",
+                "bg-gradient-to-b from-black/80 to-transparent pt-8 pb-16 px-8 w-full fixed top-0 z-50 transition-colors duration-300 fade-in",
                 className,
             )}
         >
