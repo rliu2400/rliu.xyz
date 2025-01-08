@@ -36,12 +36,6 @@ export default function Home() {
                 >
                     View Resume
                 </Link>
-                <Link
-                    href="/contact"
-                    className="border border-red-600 px-8 py-3 rounded-lg font-medium hover:bg-red-500 hover:text-black transition duration-300"
-                >
-                    Contact Me
-                </Link>
             </div>
             </div>
             </div>
