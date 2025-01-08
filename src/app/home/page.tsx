@@ -27,9 +27,7 @@ export default function Home() {
             <div className="w-[60%] bg-black bg-opacity-40 text-center items-center justify-center z-10">
             <div className="w-full h-full">
             <p className="text-lg md:text-xl mb-12 text-center w-full pt-12 px-6 leading-relaxed text-gray-100 z-10">
-                Passionate Software Developer specializing in building
-                robust and scalable web applications. I enjoy tackling
-                challenging problems and crafting elegant solutions.
+                Rising 2nd year Computer Science major at Northwestern University.
             </p>
             <div className="space-x-6 md:space-x-8 w-full z-10 py-12">
                 <Link
